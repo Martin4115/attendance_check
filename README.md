@@ -7,7 +7,7 @@ A self-developed program to check the attendance for large class designed for TA
 + Collect the passwords together with students' id in someways
 + Check the attendance by validate the password collected
 
-## Usage of Program
+## Way to Run Program
 + The method in codesGen.py could generate passwords, both in pdf and txt. pdf version is for printing and distribution, and txt data is saved for later validation
 
 ## Dependency Libraries
