@@ -1,5 +1,7 @@
 import generateCodes
 import printAndSave
+import sys
+import random
 
 def codesGen(amount, batch_id):
 	labels = generateCodes.generateCodes(amount)
@@ -9,4 +11,13 @@ def codesGen(amount, batch_id):
 
 
 if __name__ == '__main__':
-	codesGen(30, 1)
+	argv = sys.argv
+	if len(argv) == 1:
+		codesGen(30, random.randint(10000000,99999999))
+	elif len(argv) == 2:
+		num = int(argv[1])
+		codesGen(num, random.randint(10000000,99999999))
+	elif len(argv) == 3:
+		codesGen(int(argv[1]), argv[2])
+	else:
+		print("Invalid argument")
