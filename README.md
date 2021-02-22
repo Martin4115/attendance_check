@@ -8,7 +8,11 @@ A self-developed program to check the attendance for large class designed for TA
 + Check the attendance by validate the password collected
 
 ## Way to Run Program
-+ The method in codesGen.py could generate passwords, both in pdf and txt. pdf version is for printing and distribution, and txt data is saved for later validation
+
+### Code generation
++ `python ./codesGen.py Number Name`
++  Number: the number of labels generates, integer, default 30
++  Name: the filename of pdf and txt file, default random 8-bit decimal
 
 ## Dependency Libraries
 + pylabels
